@@ -1,0 +1,98 @@
+
+:root {
+  --background: #f4f6fb;
+  --surface: #ffffff;
+  --text: #222222;
+  --border: #cccccc;
+  --button: #4b55c5;
+  --button-text: #ffffff;
+}
+
+body.dark {
+  --background: #181a24;
+  --surface: #252838;
+  --text: #f2f2f2;
+  --border: #555b70;
+  --button: #777ff0;
+  --button-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 16px;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+
+.container {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+
+p {
+  line-height: 1.5;
+}
+
+#char-count {
+  margin-bottom: 4px;
+}
+
+#word-count {
+  margin-top: 4px;
+}
+
+.warning {
+  color: orange;
+}
+
+.over {
+  color: red;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--button);
+  color: var(--button-text);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
